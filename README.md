@@ -1,8 +1,8 @@
-# Parkinson-Patient-Speech-Dataset 
+# Parkinson-Patient-Speech-Dataset   
 This repository contains two speech dataset from patients diagnosed with Parkinson's Disease: original-speech-dataset and denoised-speech-dataset.
 The original-speech-dataset is obtained from tem patients. 
-The denoised speech dataset is obtained after denoising from original-speech-dataset. 
-----  
+The denoised speech dataset is obtained after denoising from original-speech-dataset.   
+
 ## Introduction of the speech dataset 
 
 The dataset is obtained from six males and four females. 
