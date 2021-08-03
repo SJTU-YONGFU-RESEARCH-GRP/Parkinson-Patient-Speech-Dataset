@@ -8,11 +8,11 @@ The denoised speech dataset is obtained after denoising from original-speech-dat
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents 
 
-* [Introduction of the speech dataset](#Introduction of the speech dataset)  
+* [Introduction of the speech dataset](#Introduction_of_the_speech_dataset)  
 * [Model](#Model)  
-* [Data Augmentation](#Data Augmentation)  
-    * [Speed perturbation](#Speed perturbation)
-    * [Spectrogram masking](#Spectrogram masking)
+* [Data Augmentation](#Data_Augmentation)  
+    * [Speed perturbation](#Speed_perturbation)  
+    * [Spectrogram masking](#Spectrogram_masking)  
 * [Performance](#Performance)
 * [Author](#Author)
 * [License](#License)
