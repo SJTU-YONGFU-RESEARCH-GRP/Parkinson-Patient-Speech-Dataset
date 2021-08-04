@@ -66,7 +66,7 @@ Time masking (TM):
 The detail is in `./speech/bin/feeding_cut.py`.
 
 ## Performance
-Here is the result of the experiment. Model 1 is fine-tuning all the parameters with the pre-trained model. We used the combination of 1,1.1,1.2 factor and tempo mode in the Model 1 with perturbation.
+Here is the result of the experiment. 'Model 1' is fine-tuning all the parameters with the pre-trained model. We used the combination of 1,1.1,1.2 factor with tempo mode in the 'Model 1 with perturbation'.
 
 ![pic](./pic/result.png)
 
