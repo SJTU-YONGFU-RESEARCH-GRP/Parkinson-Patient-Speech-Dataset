@@ -58,17 +58,17 @@ sox ${old_file.wav} ${desdir/new_file.wav} $mode ${factor}
 
 ### Spectrogram masking  
 Frequency masking (FM):
-![pic](./pic/FM.jpg)
+![pic](./pic/FM.png)
 
 Time masking (TM):
-![pic](./pic/TM.jpg)
+![pic](./pic/TM.png)
 
 The detail is in `./speech/bin/feeding_cut.py`.
 
 ## Performance
 Here is the result of the experiment. Model 1 is fine-tuning all the parameters with the pre-trained model. We used the combination of 1,1.1,1.2 factor and tempo mode in the Model 1 with perturbation.
 
-![pic](./pic/result.jpg)
+![pic](./pic/result.png)
 
 ## Authors  
    
