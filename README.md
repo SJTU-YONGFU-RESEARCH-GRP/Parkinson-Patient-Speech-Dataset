@@ -30,7 +30,7 @@ The dataset is obtained from six males and four females. Each folder contains wa
 
 We used this command to generate csv file for training, validation and testing:
 ```shell
-python ./DeepSpeech/bin/import_all_folder.py path/to/dataset train_split_ratio dev_split_ratio
+python ./speech/bin/import_all_folder.py path/to/dataset train_split_ratio dev_split_ratio
 ``` 
 Each line in the csv file is a training/validation/testing example. Audio_filepath contains path to the wav file, wav_filesize is the size of the wav file and transcript is transcript of the audio:
 ```csv
@@ -43,7 +43,7 @@ Each line in the csv file is a training/validation/testing example. Audio_filepa
 The pre-trained model is downloaded from [DeepSpeech](https://github.com/mozilla/DeepSpeech/tree/v0.5.1). We applied three strategies to the pre-trained model to identify the best method for the PD speech recognition system as shown in the picture below. The experiment result shows that fine-tuning all the parameters with the pre-trained model is the best transfer learning method. Its running commands based on shell:
 
 ```shell
-python ./DeepSpeech/DeepSpeech.py --train_files path/to/training.csv --dev_files path/to/validation.csv --test_files path/to/testing.csv --n_hidden 2048 --lm_binary_path path/to/lm.binary --lm_trie_path path/to/trie --alphabet_config_path path/to/alphabet.txt --train_batch_size n --dev_batch_size n --export_dir path/to/export --summary_dir path/to/summary --checkpoint_dir path/to/checkpoint --learning_rate 0.0001 --epochs 100
+python ./speech/DeepSpeech.py --train_files path/to/training.csv --dev_files path/to/validation.csv --test_files path/to/testing.csv --n_hidden 2048 --lm_binary_path path/to/lm.binary --lm_trie_path path/to/trie --alphabet_config_path path/to/alphabet.txt --train_batch_size n --dev_batch_size n --export_dir path/to/export --summary_dir path/to/summary --checkpoint_dir path/to/checkpoint --learning_rate 0.0001 --epochs 100
 ```
 
 ![pic](./pic/architecture.png) 
@@ -58,17 +58,17 @@ sox ${old_file.wav} ${desdir/new_file.wav} $mode ${factor}
 
 ### Spectrogram masking  
 Frequency masking (FM):
-![pic](./pic/FM.png)
+![pic](./pic/FM.jpg)
 
 Time masking (TM):
-![pic](./pic/TM.png)
+![pic](./pic/TM.jpg)
 
-The detail is in `./DeepSpeech/bin/feeding_cut.py`.
+The detail is in `./speech/bin/feeding_cut.py`.
 
 ## Performance
 Here is the result of the experiment. Model 1 is fine-tuning all the parameters with the pre-trained model. We used the combination of 1,1.1,1.2 factor and tempo mode in the Model 1 with perturbation.
 
-![pic](./pic/result.png)
+![pic](./pic/result.jpg)
 
 ## Authors  
    
