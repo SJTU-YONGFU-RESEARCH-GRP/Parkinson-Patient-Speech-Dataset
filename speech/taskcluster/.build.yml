@@ -1,0 +1,26 @@
+build:
+  allowed:
+    - "pull_request.opened"
+    - "pull_request.synchronize"
+    - "pull_request.reopened"
+    - "push"
+    - "tag"
+  ref_match: "invalid-refs-should-not-work"
+  dependencies: []
+  maxRunTime: 3600
+  docker_image: "ubuntu:14.04"
+  system_setup:
+    >
+      true
+  system_config:
+    >
+      true
+  scripts:
+    build: ''
+    package: ''
+  nc_asset_name: 'native_client.tar.xz'
+  args:
+    tests_cmdline: ''
+  convert_graphdef: ''
+  benchmark_model_bin: ''
+  tensorflow_git_desc: 'TensorFlow: v1.13.1-10-g3e0cc53'
