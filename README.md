@@ -50,7 +50,7 @@ python ./speech/DeepSpeech.py --train_files path/to/training.csv --dev_files pat
 
 ## Data Augmentation  
 ### Speed perturbation
-We used [SoX](http://sox.sourceforge.net/) to adjust the audio speed (model: speed) or tempo (model: tempo). Factor is the ratio of the new speed to the old speed.
+We used [SoX](http://sox.sourceforge.net/) to adjust the audio speed (mode: speed) or tempo (mode: tempo). Factor is the ratio of the new speed to the old speed.
 
 ```shell
 sox ${old_file.wav} ${desdir/new_file.wav} $mode ${factor}
